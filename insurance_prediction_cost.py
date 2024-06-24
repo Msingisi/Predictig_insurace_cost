@@ -243,23 +243,6 @@ pipeline = Pipeline([
 
 ############################# Streamlit interface ############################import streamlit as st
 
-
-# Set white text on black background
-st.markdown(
-    """
-    <style>
-        .stApp {
-            background-color: #000000;  /* Black background */
-            color: #ffffff;  /* White text */
-        }
-        .stButton button {
-            color: #000000;  /* Black text for the Predict button */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # Title
 st.markdown("# Insurance Prediction Cost")
 st.markdown("Curious about your potential insurance costs? You're in the right place! Simply provide the requested information and hit the **Predict** button. Our advanced ML model will estimate your insurance costs.")
